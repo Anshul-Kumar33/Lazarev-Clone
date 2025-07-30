@@ -350,9 +350,20 @@ nav button svg {
 }
 
 @media (max-width: 768px) {
-    .page2-left p {
-        font-size: 1.8rem;
+    .page2 {
+        height: 70vh;
     }
+
+    .page2-left p {
+        font-size: 2.3rem;
+    }
+
+    .page2-left h5 {
+        font-size: 2vw;
+        font-weight: 100;
+        width: 100%;
+    }
+
     .page2-left {
         height: 100%;
         width: 40%;
@@ -361,6 +372,35 @@ nav button svg {
         flex-direction: column;
         padding: 3vw 0;
     }
+
+    .page2-right {
+        height: 100%;
+        width: 50%;
+    }
+
+    .right-elem {
+        position: relative;
+        padding-top: 2vw;
+        padding-bottom: 5vw;
+        border-bottom: 1px solid #333;
+    }
+
+    .right-elem h2 {
+        font-size: 2.3vw;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .right-elem img {
+        height: 10vw;
+        width: 10vw;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        opacity: 0;
+        scale: 0;
+    }
+
 }
 
 .page3 {
@@ -428,6 +468,8 @@ nav button svg {
     z-index: 999;
 }
 
+
+
 .page4 {
     min-height: 100vh;
     width: 100%;
@@ -487,6 +529,26 @@ nav button svg {
     object-fit: cover;
     opacity: 0;
     transition: opacity ease 0.3s;
+}
+
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 13vh 10vw;
+        padding-bottom: 0;
+    }
+
+    .page4 .section .sec-left h2 {
+        font-size: 3vw;
+    }
+
+    .page4 .section .sec-left p {
+        font-size: 1.8vw;
+    }
 }
 
 .page5 {
@@ -637,9 +699,25 @@ details[open] summary~* {
     }
 }
 
-
 summary::marker {
     content: "";
+}
+
+@media (max-width: 768px) {
+    .page5 {
+        height: 80vh;
+    }
+
+    .page5>button {
+        background-color: #0BA34E;
+        padding: 3vw 3vw;
+        font-weight: 600;
+        font-size: 1vw;
+        border-radius: 50px;
+        border: none;
+        position: sticky;
+        top: 15%;
+    }
 }
 
 
